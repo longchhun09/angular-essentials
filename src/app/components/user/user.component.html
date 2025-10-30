@@ -1,6 +1,6 @@
 <div>
   <button (click)="onSelectUser()">
-    <img [src]="imagePath" width="32" height="32" priority [alt]="selectedUser.name" />
+    <img [src]="imagePath()" width="32" height="32" priority [alt]="selectedUser().name" />
   </button>
-  <span>{{ selectedUser.name }}</span>
+  <span>{{ selectedUser().name }}</span>
 </div>
