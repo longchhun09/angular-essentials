@@ -7,7 +7,7 @@ import { UserComponent } from './components/user/user.component';
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, UserComponent],
   templateUrl: './app.html',
-  styleUrl: './app.sass'
+  styleUrl: './app.scss'
 })
 export class App {
   protected readonly title = signal('angular-todo');
