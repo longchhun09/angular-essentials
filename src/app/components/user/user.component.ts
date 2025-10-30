@@ -6,8 +6,8 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 @Component({
   selector: 'app-user',
   imports: [],
-  templateUrl: './user.html',
-  styleUrl: './user.css'
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.scss'
 })
 
 export class UserComponent {
