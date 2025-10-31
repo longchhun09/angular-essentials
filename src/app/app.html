@@ -1,6 +1,20 @@
 
 <main class="main">
   <app-header />
-  <app-user />
+  <ul id="users">
+    @for (user of users; track user.id) {
+      <li>
+        <app-user
+          [user]="user"
+          (select)="onSelectUser(user.id)"
+          />
+      </li>
+    }
+  </ul>
+
+  @if (selectedUser) {
+    <app-tasks [name]="selectedUser.name" />
+  } @else {
+    <p id="fallback">Please select a user.</p>
+  }
 </main>
-<router-outlet />
