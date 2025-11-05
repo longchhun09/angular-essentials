@@ -1,6 +1,8 @@
-<div>
-  <button (click)="onSelectUser()">
-    <img [src]="imagePath" width="32" height="32" priority [alt]="user.name" />
-  </button>
-  <span>{{ user.name }}</span>
-</div>
+<app-card>
+  <div>
+    <button (click)="onSelectUser()">
+      <img [src]="imagePath" width="32" height="32" priority [alt]="user.name" />
+    </button>
+    <span>{{ user.name }}</span>
+  </div>
+</app-card>
